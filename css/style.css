@@ -1,0 +1,239 @@
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  background-color: white;;
+  width: 100%;
+}
+
+.header__thunder {
+  margin: 15px;
+  float: left;
+}
+
+.header__button {
+  background-color:#74cfae;
+  font-size: 12px;
+  padding: 14px 12px;
+  margin: 15px;
+  float: right;
+  color: white;
+  transition: 0.3s;
+  font-family: "Lato";
+}
+
+.header__button:hover {
+  color: #333;
+}
+
+.title {
+  background-color: #f2f2f2;
+  padding: 250px;
+  text-align: center;
+}
+
+.title__main {
+  color: #74cfae;
+  margin: 0 auto;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 20px;
+  font-family: "Lato";
+}
+
+.title__sub {
+  color: #c0c0c0;
+  font-size: 30px;
+  font-family: "Lato";
+}
+
+.icon {
+  background-color: #74cfae;
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon__phone {
+  float: left;
+  color: white;
+}
+
+.icon__text {
+  text-align: center;
+  color: white;
+  padding-left: 200px;
+  line-height: 30px;
+}
+
+.icon__text--title {
+  font-size: 24px;
+  padding-top: 35px;
+  font-family: "Raleway";
+}
+
+.icon__text--main {
+  font-size: 20px;
+  margin: 35px;
+  font-family: "Lato";
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+} 
+
+.work {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.work__title {
+  margin: 0 auto;
+  padding: 60px 40px;
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+.work__img {
+  margin-left: 100px;
+  margin-bottom: 80px;
+  float: left;
+  opacity: 0.7;
+  transition: all .3s;
+}
+
+.work__img:nth-child(n+4) {
+  margin-bottom: 90px;
+
+}
+
+.work__img:first-child {
+  margin-left: 0;
+}
+
+.work__img:nth-child(4) {
+  margin-left: 0;
+}
+
+.work__img:hover {
+  opacity: 1;
+}
+
+/* .work__imgdown {
+  margin-left: 100px;
+  margin-bottom: 90px;
+  float:left;
+  opacity: 0.7;
+  transition: all .3s;
+}
+
+.work__imgdown:first-child {
+  margin-left: 0;
+} */
+
+/* .work__imgdown:hover {
+  opacity: 1;
+} */ 
+
+.work__text {
+  display: inline-block;
+  margin-right: 90px;
+  margin-bottom: 70px;
+  width: 60%;
+  line-height: 30px;
+  font-family: "Lato";
+}
+
+.work__button{
+  display: inline-block;
+  font-size: 12px;
+  padding: 14px 20px;
+  background-color:#74cfae;
+  color: white;
+  animation-duration: 0.3s;
+  font-family: "Lato";
+}
+
+.work__button:hover {
+  color: #333;
+}
+
+.skill {
+  text-align: center;
+  background-color: #4e4e4e;
+}
+
+.skill__title {
+  padding: 70px;
+  font-size: 20px;
+  color: white;
+  font-family: "Raleway";
+}
+
+.float {
+  display: inline-block;
+  padding-left: 180px;
+  margin: 0 auto;
+}
+
+.skill__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #ecf1f2;
+  border-top-color: #74cfae;
+}
+
+.skill__circle--name {
+  margin-bottom: 100px;
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  font-family: "Lato";
+}
+
+.float:first-child {
+  padding-left: 0;
+}
+
+.sns {
+  text-align: center;
+  background-color: #f2f2f2; 
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.sns__mark {
+  width: 185px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  animation-duration: 0.3s ease;
+  color:#74cfae;
+}
+
+.sns__mark:hover {
+  background-color: white; 
+  animation-duration: 0.3s ease;
+  cursor: pointer;
+}
+
+.footer {
+  background-color:#74cfae;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer__text {
+  position: absolute;
+  right: 200px;
+  font-family: "Lato";
+}
