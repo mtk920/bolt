@@ -1,3 +1,13 @@
+@charset "utf-8";
+
+body {
+  font-family: "Lato";
+}
+
+.title-font {
+  font-family: "Raleway";
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -49,15 +59,12 @@
   margin: 0 auto;
   font-size: 90px;
   font-weight: 700;
-  font-family: "Lato";
-  
 }
 
 .title__sub {
   margin-top: 20px;
   color: #c0c0c0;
   font-size: 30px;
-  font-family: "Lato";
 }
 
 .icon {
@@ -84,13 +91,11 @@
 
 .icon__text--title {
   font-size: 24px;
-  font-family: "Raleway";
 }
 
 .icon__text--main {
   font-size: 20px;
   margin-top: 35px;
-  font-family: "Lato";
 }
 
 .clearfix:after {
@@ -112,7 +117,6 @@
 .work__title {
   margin: 0 auto;
   font-size: 24px;
-  font-family: "Raleway";
 }
 
 .work__imgall {
@@ -132,11 +136,7 @@
   margin-top: 80px;
 }
 
-.work__img:first-child {
-  margin-left: 0;
-}
-
-.work__img:nth-child(4) {
+.work__img:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -153,7 +153,6 @@
   display: inline-block;
   width: 60%;
   line-height: 30px;
-  font-family: "Lato";
   font-size: 13px;
 }
 
@@ -186,7 +185,6 @@
 .skill__title {
   font-size: 20px;
   color: white;
-  font-family: "Raleway";
 }
 
 .skillset {
@@ -211,7 +209,6 @@
   font-size: 16px;
   margin-top: 10px;
   color: white;
-  font-family: "Lato";
 }
 
 .inline:first-child {
@@ -249,7 +246,6 @@
 }
 
 .footer__text {
-  font-family: "Lato";
   color: white;
   text-align: right;
 }
