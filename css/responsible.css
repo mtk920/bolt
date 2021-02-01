@@ -1,0 +1,144 @@
+@media screen and (max-width: 1199px) {
+  .headder {
+    width: 97%;
+  }
+  
+  .inner {
+    width: 97%;
+  }
+  
+  .icon__inner {
+    padding-bottom: 25px;
+  }
+
+  .icon__phone {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .icon__text {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .icon__text--title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .icon__text--main {
+    margin: 0;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .work__inner {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .work__img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .work__img:nth-child(n+5){
+    margin-top: 0;
+  }
+
+  .work__img:nth-child(4) {
+    margin-top: 80px;
+  }
+  
+  .work__text-block {
+    margin-top: 80px;
+  }
+
+  .work__text {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .work__button{
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .inline {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-top: 88px;
+  }
+  .inline:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title__main {
+    margin: 0;
+    font-size: 80px;
+  }
+
+  .title {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  .icon__text {
+    width: 100%;
+  }
+
+  .img-real {
+    width: 100%;
+ }
+
+  .sns__mark {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .sns {
+    text-align: center;
+    background-color: #f2f2f2; 
+    padding: 50px 0;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .humberger-menu {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 15px;
+  }
+  
+  .humberger-menu__line {
+    height: 3px;
+    width: 25px;
+    margin-bottom: 7px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+
+  .humberger-menu__line:last-child {
+    margin-bottom: 0;
+  }
+
+}
