@@ -4,6 +4,10 @@ body {
   font-family: "Lato";
 }
 
+a {
+  display: inline-block;
+}
+
 .title-font {
   font-family: "Raleway";
 }
@@ -224,8 +228,6 @@ body {
 
 .sns__mark {
   width: 185px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: inline-block;
   margin: 0 auto;
   text-align: center;
@@ -237,6 +239,13 @@ body {
   background-color: white; 
   animation-duration: 0.3s ease;
   cursor: pointer;
+}
+
+.sns__mark--color {
+  color: #74cfae;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer {
