@@ -129,11 +129,14 @@ a {
 .work__img { 
   margin-left: 100px;
   float: left;
+  font-size: 0;
+}
+
+.img-real {
   opacity: 0.7;
   transition: all .3s;
   z-index: 10;
   cursor: pointer;
-  font-size: 0;
 }
 
 .work__img:nth-child(n+4) {
@@ -144,7 +147,7 @@ a {
   margin-left: 0;
 }
 
-.work__img:hover {
+.img-real:hover {
   opacity: 1;
 }
 
@@ -219,15 +222,24 @@ a {
   margin-left: 0;
 }
 
+/* .space-del {
+  font-size: 0;
+} */
+
+
 .sns {
   text-align: center;
   background-color: #f2f2f2; 
   padding: 200px 0;
 }
 
+.sns-flex {
+  display: flex;
+}
+
+
 .sns__mark {
   width: 185px;
-  display: inline-block;
   margin: 0 auto;
   text-align: center;
   transition: all .3s;
@@ -270,10 +282,6 @@ a {
   
   .icon__inner {
     padding-bottom: 25px;
-  }
-
-  .all-include {
-    padding-top: 111px;
   }
 
   .icon__phone {
@@ -345,12 +353,6 @@ a {
     margin-top: 0;
   }
 }
-/* 768-772 */
-@media screen and (max-width: 772px) and (min-width:768px) {
-  .sns__mark {
-    width: 24%;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .sp-br {
@@ -359,8 +361,6 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  
-  
   .title__main {
     margin: 0;
     font-size: 80px;
@@ -371,18 +371,13 @@ a {
     padding-bottom: 130px;
   }
 
-  .sp-only {
-    line-break: [keep-all];
-  }
-
   .icon__text {
     width: 100%;
   }
 
-  .img-real {
-    width: 100%;
- }
-
+  .sns-flex {
+    display: block;
+  }
   .sns__mark {
     width: 100%;
     padding: 20px 0;
@@ -408,8 +403,8 @@ a {
   }
   
   .humberger-menu__line {
-    height: 3px;
-    width: 25px;
+    height: 1px;
+    width: 30px;
     margin-bottom: 7px;
     border: 1px solid #ddd;
     background-color: #ddd;
