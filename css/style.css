@@ -39,11 +39,11 @@ a {
   float: right;
   color: #FFF;
   transition: 0.3s;
-  font-family: "Lato";
   text-decoration: none;
 }
 
-.header__button:hover {
+.header__button:hover,
+.work__button {
   color: #333;
 }
 
@@ -126,28 +126,27 @@ a {
   margin-top: 40px;
 }
 
-.work__img { 
+.work__imgall ul li { 
   margin-left: 100px;
   float: left;
   font-size: 0;
 }
 
-.img-real {
+.work__imgall ul li a {
   opacity: 0.7;
   transition: all .3s;
   z-index: 10;
-  cursor: pointer;
 }
 
-.work__img:nth-child(n+4) {
+.work__imgall ul li:nth-child(n+4) {
   margin-top: 80px;
 }
 
-.work__img:nth-child(3n+1) {
+.work__imgall ul li:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.img-real:hover {
+.work__imgall ul li a:hover {
   opacity: 1;
 }
 
@@ -170,14 +169,9 @@ a {
   background-color:#74cfae;
   color: #FFF;
   transition: all .3s;
-  font-family: "Lato";
   margin-left: 90px;
   vertical-align: top;
   text-decoration: none;
-}
-
-.work__button:hover {
-  color: #333;
 }
 
 .skill {
@@ -199,33 +193,20 @@ a {
   font-size: 0;
 }
 
-.inline {
+.skillset li {
   display: inline-block;
   margin-left: 180px;
 }
 
-.skill__circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 10px solid #ecf1f2;
-  border-top-color: #74cfae;
-}
-
-.skill__circle--name {
+.skillset li p {
   font-size: 16px;
   margin-top: 10px;
   color: #FFF;
 }
 
-.inline:first-child {
+.skillset li:first-child {
   margin-left: 0;
 }
-
-/* .space-del {
-  font-size: 0;
-} */
-
 
 .sns {
   text-align: center;
@@ -233,26 +214,25 @@ a {
   padding: 200px 0;
 }
 
-.sns-flex {
+.sns ul {
   display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
-
-.sns__mark {
+.sns ul li {
   width: 185px;
-  margin: 0 auto;
-  text-align: center;
   transition: all .3s;
   color:#74cfae;
 }
 
-.sns__mark:hover {
+.sns ul li:hover {
   background-color: #FFF; 
   animation-duration: 0.3s ease;
   cursor: pointer;
 }
 
-.sns__mark--color {
+.sns ul li a {
   color: #74cfae;
   width: 100%;
   padding: 20px 0;
@@ -270,32 +250,23 @@ a {
 }
 
 /* レスポンシブル対応 */
-
 @media screen and (max-width: 1199px) {
-  .headder {
-    width: 97%;
-  }
-  
   .inner {
     width: 97%;
   }
   
   .icon__inner {
     padding-bottom: 25px;
+    text-align: center;
   }
 
   .icon__phone {
     float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
   }
   
   .icon__text {
     float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
   }
   
   .icon__text--title {
@@ -312,20 +283,19 @@ a {
   .work__inner {
     padding-top: 60px;
     padding-bottom: 70px;
+    text-align: center;
   }
 
-  .work__img {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .work__img:nth-child(n+5){
+  .work__imgall ul li:nth-child(n+4) {
     margin-top: 0;
   }
+  
+  .work__imgall ul li {
+    float: none;
+    margin-left: 0;
+  }
 
-  .work__img:nth-child(4) {
+  .work__imgall ul li:nth-child(3n+4) {
     margin-top: 80px;
   }
   
@@ -343,20 +313,13 @@ a {
     margin-left: 0;
   }
 
-  .inline {
-    width: 100%;
-    padding-left: 0;
+  .skillset li {
+    display: block;
     margin: 0 auto;
     margin-top: 88px;
   }
-  .inline:first-child {
+  .skillset li:first-child {
     margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sp-br {
-    display: none;
   }
 }
 
@@ -364,6 +327,9 @@ a {
   .title__main {
     margin: 0;
     font-size: 80px;
+  }
+  .title__inner {
+    width: 350px;
   }
 
   .title {
@@ -375,13 +341,13 @@ a {
     width: 100%;
   }
 
-  .sns-flex {
+  .sns ul {
     display: block;
   }
-  .sns__mark {
+
+  .sns ul li {
     width: 100%;
     padding: 20px 0;
-    margin: 0 auto;
   }
 
   .sns {
@@ -398,7 +364,6 @@ a {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    cursor: pointer;
     float: right;
   }
   
@@ -409,10 +374,10 @@ a {
     border: 1px solid #ddd;
     background-color: #ddd;
     border-radius: 4px;
+    display: block;
   }
 
   .humberger-menu__line:last-child {
     margin-bottom: 0;
   }
-
 }
