@@ -226,7 +226,7 @@ a {
   color:#74cfae;
 }
 
-.sns ul li:hover {
+.sns ul li a:hover {
   background-color: #FFF; 
   animation-duration: 0.3s ease;
   cursor: pointer;
@@ -267,11 +267,11 @@ a {
   .icon__text {
     float: none;
     margin: 0 auto;
+    margin-top: 20px;
   }
   
   .icon__text--title {
     font-size: 24px;
-    margin-top: 20px;
   }
   
   .icon__text--main {
@@ -347,7 +347,6 @@ a {
 
   .sns ul li {
     width: 100%;
-    padding: 20px 0;
   }
 
   .sns {
