@@ -8,6 +8,10 @@ a {
   display: inline-block;
 }
 
+.humberger-menu{
+  display:none;
+}
+
 .title-font {
   font-family: "Raleway";
 }
@@ -43,7 +47,7 @@ a {
 }
 
 .header__button:hover,
-.work__button {
+.work__button:hover {
   color: #333;
 }
 
@@ -113,8 +117,7 @@ a {
 }
 
 .work__inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px 0;
 }
 
 .work__title {
@@ -180,8 +183,7 @@ a {
 }
 
 .skill__inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px 0;
 }
 .skill__title {
   font-size: 20px;
@@ -222,8 +224,11 @@ a {
 
 .sns ul li {
   width: 185px;
-  transition: all .3s;
   color:#74cfae;
+}
+
+.sns ul li a {
+  transition: all .3s;
 }
 
 .sns ul li a:hover {
@@ -240,8 +245,7 @@ a {
 
 .footer {
   background-color:#74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px 0;
 }
 
 .footer__text {
@@ -281,8 +285,7 @@ a {
   }
 
   .work__inner {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding: 60px 0 70px 0;
     text-align: center;
   }
 
@@ -309,8 +312,7 @@ a {
   }
   
   .work__button{
-    margin-top: 40px;
-    margin-left: 0;
+    margin: 40px 0 0 0;
   }
 
   .skillset li {
@@ -333,8 +335,7 @@ a {
   }
 
   .title {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding: 160px 0 130px 0;
   }
 
   .icon__text {
@@ -364,6 +365,7 @@ a {
     border: 1px solid #ddd;
     border-radius: 4px;
     float: right;
+    display: inline;
   }
   
   .humberger-menu__line {
